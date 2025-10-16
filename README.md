@@ -1,2 +1,43 @@
-# certificatevalidationusingblockchain
- Final Year Major Project on Certification Validation Using Blockchain using University Certificate Template(Like VTU certificate) to verify whether the data is valid or fake through our project.
+# 🎓 Certificate Validation Using Blockchain
+
+A blockchain-based web application that verifies and validates certificates securely using **SHA-256 hashing**.  
+This project ensures that issued certificates cannot be forged or altered, providing authenticity through a decentralized ledger-like structure.
+
+---
+
+## 🚀 Features
+- ✅ Upload and validate certificates
+- 🔒 Blockchain-like data storage using SHA-256 hashing
+- 🧩 Admin and Institution login system
+- 🕵️ Tamper-proof verification mechanism
+- 💾 Secure data storage in MySQL
+- ⚡ Simple web interface using Flask
+
+---
+
+## 🧠 System Architecture
+
+### 🔹 Workflow
+1. **Institution uploads** a certificate.  
+2. Flask backend generates a **unique SHA-256 hash** for that certificate.  
+3. Each hash is stored as a **block** in the database, linked with the previous block (`previous_hash`).  
+4. When verifying, the uploaded certificate’s hash is recomputed and compared with the stored hash.  
+5. If both hashes match → the certificate is **valid**, otherwise it is **invalid**.
+
+### 🏗️ Tech Stack
+| Layer | Technology |
+|--------|-------------|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Python (Flask Framework) |
+| Database | MySQL |
+| Security | SHA-256 Hashing |
+| IDE | VS Code |
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone the Repository
+```bash
+git clone https://github.com/tabarakmukhtar/certificatevalidationusingblockchainn.git
+cd certificatevalidationusingblockchainn
